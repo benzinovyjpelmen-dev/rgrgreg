@@ -1,0 +1,21 @@
+﻿<Window x:Class="CultureDocs.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Вход в систему" Height="320" Width="420"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <StackPanel Margin="30">
+        <TextBlock Text="Учёт методической и сценарной документации"
+                   FontSize="16" FontWeight="Bold" TextWrapping="Wrap"
+                   HorizontalAlignment="Center" Margin="0,10,0,25"/>
+        <TextBlock Text="Логин:"/>
+        <TextBox x:Name="TxtLogin" Height="28" Margin="0,3,0,10"/>
+        <TextBlock Text="Пароль:"/>
+        <PasswordBox x:Name="TxtPassword" Height="28" Margin="0,3,0,25"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Войти" Width="100" Height="32" Margin="5"
+                    Click="BtnLogin_Click" IsDefault="True"/>
+            <Button Content="Отмена" Width="100" Height="32" Margin="5"
+                    Click="BtnCancel_Click" IsCancel="True"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
